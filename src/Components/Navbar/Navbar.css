@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container
+{
+    position: fixed;
+    top: 0;
+    
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    display: flex;
+    justify-content:space-around;
+    box-shadow: 2px 4px 2px 4px whitesmoke;
+    z-index: 1000;
+    padding: 0 1rem; 
+    background-color: #fff;
+
+    
+}
+.logo-container{
+    padding: 2px;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-ele{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    position: relative;
+   
+    
+}
+.navbar-ele .ele{
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+   
+    font-weight: 500;
+   padding: 0 23px;
+   color: #333;
+   transition: color 0.3s ease;
+
+
+}
+.navbar-ele .ele:hover {
+    color: #fff; 
+  }
+
+
+   .logo-container img{
+    width: 100px;
+    height: 100px;
+    transition: height 2s;
+  }
+  .logo-container :hover{
+    transform: scale(1.2);
+  }
+  .logo-container h2{
+  font-size:25px;
+  font-weight: 600;
+  }
+.navbar-ele span{
+    position: absolute;
+    top: 0;
+    left:10px;
+   
+    width:95px;
+    height:100%;
+    background:#44bae4 ;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    z-index: -1;
+}
+.navbar-ele a:nth-child(1):hover~span{
+    left:10px;
+}
+.navbar-ele a:nth-child(2):hover~span{
+    left:125px;
+    width: 90px;
+}
+.navbar-ele a:nth-child(3):hover~span{
+    left:240px;
+    width: 100px;
+
+}
+
+.navbar-ele a:nth-child(4):hover ~ span {
+    left: 385px;
+    width: 125px;
+  }
+  
+  .navbar-ele a:nth-child(5):hover ~ span {
+    left: 530px;
+  }
+  
+  .navbar-ele a:nth-child(6):hover ~ span {
+    left: 630px;
+  }
+  
+  .navbar-ele a:nth-child(7):hover ~ span {
+    left: 750px;
+    width: 110px;
+  }
+.btn{
+    padding: 10px 20px;
+    background-color: green;
+    border-radius: 10px;
+    border: none;
+   
+    color: white;
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+
+}
+.btn:hover {
+    background-color: #218838; 
+}
+
+
+@keyframes jump {
+    0%, 100% ,0%{
+      transform: translateY(0);
+    }
+    25% {
+      transform: translateY(-20px); 
+    }
+    50%,50% {
+      transform: translateY(0);
+    }
+    75%,100% {
+      transform: translateY(-20px);
+    }
+
+  }
+  
+  
+  .jump-on-load {
+    animation: jump 1.2s ease-out; }
+  

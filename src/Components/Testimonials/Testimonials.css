@@ -1,0 +1,146 @@
+
+ul{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.testi-cards{
+    display: flex;
+    align-items: center;
+   justify-items: center;
+   gap: 30px;
+}
+.testi-container{
+    margin-top: 100px;
+    height: 100vh;
+    width: 100%;
+    margin-inline: 1.5rem;
+    display: grid;
+    place-items: center;
+    background-color: rgb(214, 216, 218);
+}
+.testicard{
+    position: relative;
+    width: 256px;
+    background-color: #fff;
+    padding:1.25rem 2rem  3rem;
+    border-radius: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 16px hsla(29, 75%, 8%, 0.2);
+
+}
+.card__img{
+ width: 96px;   
+ border-radius: 50%;
+}
+.card-border{
+    width: 110px;
+    height: 110px;
+    border: 2px solid #44bae4 ;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin: 0 auto 0.75rem;
+}
+.card-name{
+    color: #44bae4;
+    font-size: 18px;
+    font-weight: 500;
+}
+.card-prof{
+   color: rgb(59, 57, 57); 
+   font-size: 14px;
+   font-weight: 500;
+}
+.card-social{
+    width: 200px;
+    background-color: #44bae4;
+    padding: 0.75rem;
+    border-radius: 3rem;
+    text-align: initial;
+    box-shadow: 0 8px 24px hsla(29, 75%, 56%, .3) ;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom:-1.75rem ;
+    margin: 0 auto;
+    overflow: hidden;
+    transform-origin:18px 17px ;
+}
+.card-social:hover{
+    background-color: #1c7e97;
+}
+.card-so-control{
+   position: relative; 
+   transform-origin: 18px 18px;
+   transition: transform 0.45s ease;
+   transform: rotate(0);
+   
+
+}
+.card-toggle{
+    display: inline-flex; 
+    background-color:#fff;
+    color:#44bae4;
+    font-size: 1.25rem;
+    padding: .5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+ }
+ .card-toggle:hover{
+    background-color: #44bae4;
+ }
+ .testi{
+    display: flex;
+ }
+ .social-text{
+   display: block;
+   color: black;
+   font-size: 12px;
+   font-weight: 500; 
+   top: 0.5rem;
+ }
+ .card-list{
+    display: inline-flex;
+    column-gap: 0.75rem;
+    transform: rotate(135deg);
+    transform-origin:18px  17px ;
+ }
+ .card-link{
+    display: inline-flex;
+    background-color: rgb(225, 227, 228);
+    color: black;
+    font-size: 1.25rem;
+    padding: 6px;
+    border-radius: 50%;
+ }
+ .social-text,.card-list{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding-left: 3.1rem;
+ }
+ 
+ .testi-head h2{
+    font-size: 40px;
+    font-weight: 600;
+    color:black;
+    
+ 
+ }
+
+ @media (max-width: 480px){
+    .testi-container{
+        display: flex;
+        flex-direction: column;
+    }
+ }
+
+
+
+ 
