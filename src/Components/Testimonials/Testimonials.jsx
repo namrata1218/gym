@@ -47,7 +47,7 @@ const testimonialsData = [
             twitter: 'https://twitter.com/johndoe',
         },
     },
-    // Add more testimonials as needed
+   
 ];
 
 const Testimonials = () => {

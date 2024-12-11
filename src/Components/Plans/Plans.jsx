@@ -14,7 +14,7 @@ const Plans = () => {
             <div data-aos='fade-right'  className="image">
             <img src="https://img.freepik.com/free-vector/goals-habits-tracking-app_23-2148623159.jpg" alt="" />
             </div>
-            <div  className="text-box box2">
+            <div  className="text-box ">
                 <h3>Lorem, ipsum dolor.</h3>
                 <p>Lorem ipsum dolor  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique deserunt minima vitae! sit amet consectetur.nkjdcnkjsnkjandc</p>
             </div>

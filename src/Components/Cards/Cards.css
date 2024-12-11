@@ -38,12 +38,18 @@
     padding: 1rem; 
 }
 .card-container{
+    
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+margin-top: 30px;
       margin-left: 25px; 
       margin-right: 25px; 
-    display: grid;
-    grid-template-columns:repeat(4,1fr) ;
-place-items: center;
-  gap: 25px;
+    
+   gap: 25px; 
 
 }
 .container-cards{
@@ -51,6 +57,7 @@ place-items: center;
    height: 100vh;
 }
 .heading-container{
+    
     width: 100%;
     height:50px;
     margin-left: 25px;

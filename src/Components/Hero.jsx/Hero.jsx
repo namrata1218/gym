@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import './Hero.css'
 
 const Slider = () => {
   const slides = [
@@ -31,9 +32,8 @@ const Slider = () => {
   }, [slides.length]);
 
   return (
-    <div style={{ marginTop:"100px", textAlign: "center", position: "relative", width:"95%",
-    height:'', margin:" 40px auto " }}>
-      <div style={{ position: "relative" }}>
+    <div className="container-hero" >
+      <div className="hero-img"  style={{ position: "relative" }}>
         
         <img
           src={slides[currentIndex].image}

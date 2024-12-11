@@ -9,9 +9,8 @@
 {
     position: fixed;
     top: 0;
-    
     width: 100%;
-    height: 70px;
+    margin-right: auto;
     align-items: center;
     display: flex;
     justify-content:space-around;
@@ -24,7 +23,7 @@
 }
 .logo-container{
     padding: 2px;
-    margin-left: 5px;
+    
     display: flex;
     align-items: center;
 }
@@ -146,4 +145,22 @@
   
   .jump-on-load {
     animation: jump 1.2s ease-out; }
+
+.toggleNavbar{
+  display: none;
+}
+    
+    @media(max-width:768px){
+      .navbar-ele{
+        display: none;
+      }
+      .toggleNavbar{
+        display: contents;
+      }
+      .logo-container{
+        left: 0;
+      }
+
+    }
+
   

@@ -1,5 +1,5 @@
 .plan{
-   width: 100%;
+   width: 100vw;
    height: 100%;
     background-color: #fff;
     margin-top: 100px;
@@ -56,6 +56,8 @@
 display: flex;
 gap: 100px;
 flex-direction: column;
+align-items: center;
+justify-content: center;
 gap: 200px;
 
 }
@@ -71,4 +73,43 @@ gap: 200px;
 }
 .plan-content .third{
 flex-direction: row;
+}
+
+@media(max-width:768px){
+    .plan-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 20px;
+    }
+    
+    .text-box{
+        max-width: 200px;
+        height: 200px;
+    }
+    .plan-content .image{
+        width: 200px;
+        height: 200px;
+    }
+    .text-box h3{
+        font-size: 10px;
+
+    }
+    .text-box p{
+        font-size: 10px;
+    }
+    .box-two{
+        max-width: 200px;
+        height: 200px;  
+    }
+    .box-two h3{
+        font-size: 10px;
+
+    }
+    .box-two p{
+        font-size: 10px;
+    }
+    
+
 }
